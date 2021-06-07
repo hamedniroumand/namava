@@ -1,0 +1,38 @@
+<div class="header-wrapper"
+    style="background-image: linear-gradient(rgba(18, 18, 18, 0) 10vw, rgb(18, 18, 18) 46.875vw), linear-gradient(to left, rgba(18, 18, 18, 0.7), rgba(18, 18, 18, 0) 50%), url({{ background }})">
+    <div class="header-wrapper__info">
+        <div class="header-wrapper__info-logo mb-3">
+            <img src="{{ logo }}" alt="movie-logo">
+        </div>
+        <div class="header-wrapper__info-title">
+            <h2>{{ title }}</h2>
+        </div>
+        <div class="header-wrapper__info-description">
+            <p class="main-description">{{ description }}</p>
+            <p>{{ infoDescription }}</p>
+        </div>
+        <div class="header-wrapper__info-cta">
+            <button class="btn btn-white ml-2">قسمت ها</button>
+            <button class="btn btn-glass-white ml-2">پیش نمایش</button>
+            <button class="btn-outline btn-glass-white border-radius-full plus ml-2">
+                <span>+</span>
+            </button>
+            <div class="more-info">
+                <a class="" href="#">
+                    <i class="fa fa-info-circle ml-1"></i>
+                    <span>توضیحات بیشتر</span>
+                </a>
+            </div>
+        </div>
+        <div class="header-wrapper__info-subdescription">
+            {{#each info}}
+            <ul>
+                <li class="title">{{ title }}:</li>
+                {{#each values as |value| }}
+                <li>{{ value }}</li>
+                {{~/each}}
+            </ul>
+            {{~/each}}
+        </div>
+    </div>
+</div>

@@ -1,0 +1,14 @@
+
+section.offers {
+    .offer {
+        a {
+            &:focus-within {
+                outline: 0;
+            }            
+            img {
+                width: 100% !important;
+                border-radius: 5px;
+            }
+        }
+    }
+}

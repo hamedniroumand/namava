@@ -1,0 +1,62 @@
+@mixin responsive($breakpoint) {
+    @if $breakpoint == xs {
+        @media only screen and (max-width: 576px) {
+            @content;
+        } 
+    }
+    @if $breakpoint == sm {
+        @media only screen and (max-width: 576px) {
+            @content;
+        } 
+    }
+    @if $breakpoint == md {
+        @media only screen and (max-width: 768px) {
+            @content;
+        }
+    }
+    @if $breakpoint == lg {
+        @media only screen and (max-width: 992px) {
+            @content;
+        }
+    }
+    @if $breakpoint == xl {
+        @media only screen and (max-width: 1200px) {
+            @content;
+        }
+    }
+    @if $breakpoint == xxl {
+        @media only screen and (min-width: 1400px) {
+            @content;
+        }
+    }
+    @else {
+        @media only screen and (max-width: $breakpoint) {
+            @content;
+        }
+    }
+}
+
+@mixin btn($color) {
+    background-color: $color;
+    &:hover {
+        background-color: darken($color, 15);
+    }
+    @content;
+}
+@mixin btn-outline($color) {
+    border: 1px solid rgba($color, 0.6);
+    color: rgba($color, 0.8);
+    &:hover {
+        background-color: darken(rgba($color, 0.1), 5);
+        color: rgba($color, 0.9);
+    }
+    @content;
+}
+@mixin btn-glass($color) {
+    color: $color;
+    background-color: rgba($color, 0.4);
+    &:hover {
+        background-color: rgba($color, 0.52);
+    }
+    @content;
+}

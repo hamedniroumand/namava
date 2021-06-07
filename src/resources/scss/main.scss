@@ -1,0 +1,27 @@
+@import "abstracs";
+@import "3rd-party";
+@import "fonts";
+@import "base";
+@import "layouts";
+@import "pages";
+@import "sections";
+@import "components";
+@import "utilities";
+
+main {
+    position: relative;
+    @include responsive(1180px) {
+        top: 10vh;
+    }
+    @include responsive(1000px) {
+        top: 18vh;
+    }
+    @include responsive(950px) {
+        top: 21vh;
+    }
+    @include responsive(780px) {
+        top: 24vh;
+    }
+    
+}
+

@@ -1,0 +1,17 @@
+.card {
+    @include responsive(xs) {
+        background-color: red;
+    }
+     @include responsive(sm) {
+        background-color: blue;
+    }
+     @include responsive(md) {
+        background-color: antiquewhite;
+    }
+     @include responsive(lg) {
+        background-color: rgb(145, 85, 7);
+    }
+     @include responsive(xl) {
+        background-color: rgb(145, 7, 145);
+    }
+}

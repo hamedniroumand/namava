@@ -1,0 +1,17 @@
+<section class="offers">
+    <div class="splide">
+        <div class="splide__track">
+            <ul class="splide__list">
+                {{#each offersData}}
+                <li class="offer splide__slide">
+                    {{!-- {{> offerItem background=background url=url }} --}}
+                    <a href="{{ url }}">
+                        <img src="{{ background }}" alt="">
+                    </a>
+                </li>
+                {{/each}}
+            </ul>
+        </div>
+    </div>
+
+</section>

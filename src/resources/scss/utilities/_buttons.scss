@@ -1,0 +1,29 @@
+.btn {
+    padding: 0.55rem 1rem;
+    font-family: inherit;
+    border-radius: 3px;
+    border: 1px solid transparent;
+    outline: 0;
+    box-shadow: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-outline {
+    @extend .btn;
+    background: none;
+}
+
+.btn-outline-white {
+    @include btn-outline(white)
+}
+.btn-outline-red {
+    @include btn-outline(red)
+}
+
+.btn-white {
+    @include btn(white)
+}
+
+.btn-glass-white {
+    @include btn-glass(white)
+}
