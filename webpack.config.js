@@ -127,11 +127,11 @@ const config = {
             ],
         }),
         new HtmlWebpackPlugin({
-            title: "Home Page",
             template: path.join(__dirname, "src", "pages", "index.hbs"),
             filename: "index.html",
-            chunks: ["styles", "home", "vendors~app~home"],
+            chunks: ["styles", "app", "home", "vendors~app~home"],
             templateParameters: require("./data.json"),
+            favicon: "./src/resources/img/favicon.png",
         }),
         new CleanWebpackPlugin(),
     ],

@@ -1,14 +1,9 @@
-    <div class="splide">
-        <div class="splide__track">
-            <ul class="splide__list">
-                {{#each offersData}}
-                <li class="offer splide__slide">
-                    {{!-- {{> offerItem background=background url=url }} --}}
-                    <a href="{{ url }}">
-                        <img src="{{ background }}" alt="">
-                    </a>
-                </li>
-                {{/each}}
-            </ul>
-        </div>
+<div class="offers collection-row-items">
+    {{#each offersData}}
+    <div class="offer">
+        <a href="{{ url }}">
+            <img src="{{ background }}" alt="">
+        </a>
     </div>
+    {{/each}}
+</div>

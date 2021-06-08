@@ -8,9 +8,13 @@
         <div class="header-wrapper__info-title">
             <h2>{{ title }}</h2>
         </div>
-        <div class="header-wrapper__info-description">
-            <p class="main-description">{{ description }}</p>
+        <div class="header-wrapper__info-description">           
+            {{#if description}}
+             <p class="main-description">{{ description }}</p>
+            {{/if}}
+            {{#if infoDescription}}
             <p>{{ infoDescription }}</p>
+            {{/if}}
         </div>
         <div class="header-wrapper__info-cta">
             <button class="ml-2 btn btn-white">قسمت ها</button>

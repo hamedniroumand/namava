@@ -1,13 +1,24 @@
 
 section.offers {
+    padding: $section-padding;
+    padding-top: 0;
     .offer {
+        margin-left: $row-item-gap;
         a {
             &:focus-within {
                 outline: 0;
             }            
             img {
-                width: 100% !important;
+                width: 30rem;
                 border-radius: 5px;
+
+                @include responsive(md) {
+                    width: 20rem;
+                }
+
+                @include responsive(sm) {
+                    width: 90vw;
+                }
             }
         }
     }

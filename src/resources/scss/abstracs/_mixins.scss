@@ -5,7 +5,7 @@
         } 
     }
     @if $breakpoint == md {
-        @media only screen and (max-width: 800px) { //768px
+        @media only screen and (max-width: $md-break-point) { //768px
             @content;
         }
     }
@@ -31,6 +31,8 @@
     }
 }
 
+
+
 @mixin btn($color) {
     background-color: $color;
     &:hover {
@@ -54,4 +56,52 @@
         background-color: rgba($color, 0.52);
     }
     @content;
+}
+
+@mixin main-and-fotter-transform {
+    @include responsive(1400px) {
+        top: 0;
+    }
+    @include responsive(1300px) {
+        top: 4vh;
+    }
+    @include responsive(1240px) {
+        top: 8vh;
+    }
+    @include responsive(1150px) {
+        top: 13.5vh;
+    }
+    @include responsive(1050px) {
+        top: 15vh;
+    }
+    @include responsive(980px) {
+        top: 18.5vh;
+    }
+    @include responsive(900px) {
+        top: 20vh;
+    }
+    @include responsive(850px) {
+        top: 23vh;
+    }
+    @include responsive(800px) {
+        top: 8vh;
+    }
+    @include responsive(750px) {
+        top: 12.5vh;
+    }
+    @include responsive(610px) {
+        top: 15vh;
+    }
+    @include responsive(590px) {
+        top: 17vh;
+    }
+    @include responsive(560px) {
+        top: 18.5vh;
+    }
+    @include responsive(530px) {
+        top: 20vh;
+    }
+    @include responsive(500px) {
+        top: 0;
+    }
 }

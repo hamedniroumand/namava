@@ -11,25 +11,6 @@
 
 main {
     position: relative;
-    top: -10vh;
-    @include responsive(1334px) {
-        top: 14vh;
-    }
-    @include responsive(1180px) {
-        top: 15vh;
-    }
-    @include responsive(1000px) {
-        top: 22vh;
-    }
-    @include responsive(950px) {
-        top: 23vh;
-    }
-    @include responsive(780px) {
-        top: 24vh;
-    }
-    
-    @include responsive(sm) {
-        top: 34vh;
-    }
+    top: -12vh;
+    @include main-and-fotter-transform;
 }
-

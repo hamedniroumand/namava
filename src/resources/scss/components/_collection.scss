@@ -9,6 +9,9 @@
             }
             img {
                 width: 26rem;
+                @include responsive(sm) {
+                    width: 90vw;
+                }
             }
             p {
                 font-size: 0.8rem;

@@ -1,20 +1,25 @@
 $mobile-breakpoint: 500px;
 $tablet-breakpoint: 800px;
+$mobile-header-heght: 135vw;
+$header-heght: 50vw;
 
 header {
     color: white;
-    height: 50vw;
+    height: $header-heght;
+    @include responsive(sm) {
+        min-height: $mobile-header-heght;
+    }
 
     .header-wrapper {
         animation-timing-function: ease-in-out;
-
+        position: relative;
         width: 100%;
-        min-height: 50vw;
+        min-height: $header-heght;
         display: none;
         background-size: contain;
         background-repeat: no-repeat;
         @include responsive(sm) {
-            min-height: 135vw;
+            min-height: $mobile-header-heght;
         }
 
         &.active {
@@ -28,13 +33,18 @@ header {
             padding-right: 2rem;
 
             @include responsive(sm) {
+                padding-right: 0;
                 text-align: center;
-                transform: translateY(80%);
+                transform: translateY(0%);
+                position: absolute;
+                bottom: 1.8rem;
+                width: 100%;
             }
+       
 
             &-logo {
                 img {
-                    max-width: 12rem;
+                    max-width: 22rem;
                     max-height: 9rem;
                     @include responsive(md) {
                         max-height: 6.5rem;

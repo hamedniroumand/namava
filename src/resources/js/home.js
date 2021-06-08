@@ -1,6 +1,5 @@
-import Splide from "@splidejs/splide";
-import Slick from "slick-carousel";
 import $ from "jquery";
+import slick from "slick-carousel";
 
 $(document).ready(() => {
     $(".default-row-items").slick({
@@ -49,12 +48,21 @@ $(document).ready(() => {
         variableWidth: true,
         responsive: [
             {
-                breakpoint: 1024,
+                breakpoint: 800,
                 settings: {
-                    slidesToShow: 3,
-                    slidesToScroll: 3,
-                    infinite: true,
-                    dots: true,
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                    infinite: false,
+                    dots: false,
+                },
+            },
+            {
+                breakpoint: 500,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    infinite: false,
+                    dots: false,
                 },
             },
         ],
@@ -73,7 +81,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     headerWrapper[currentActiveIndex].classList.add("active");
 
-    console.log(isResponsiveMode);
     if(isResponsiveMode) {
         let responsiveImage = headerWrapper[0].getAttribute("data-responsive_image")
         headerWrapper[0].style.backgroundImage = `linear-gradient(rgba(18, 18, 18, 0) 10vw, rgb(18, 18, 18) 135vw), url("${responsiveImage}")`;
@@ -83,32 +90,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
 
-    new Splide(".splide", {
-        direction: "rtl",
-        perPage: 3,
-        perMove: 3,
-        fixedWidth: "30%",
-        gap: "2rem",
-        padding: "2rem",
-        pagination: false,
-        autoWidth: false,
-        cover: true,
-        breakpoints: {
-            1280: {
-                fixedWidth: 0,
-                perPage: 2,
-            },
-            800: {
-                fixedWidth: 0,
-                perPage: 1,
-            },
-        },
-    }).mount();
-
-
     let headerWrapperLength = headerWrapper.length - 1;
-
-   
 
     setInterval(() => {
         headerWrapper[currentActiveIndex].classList.remove("active");
@@ -128,8 +110,6 @@ document.addEventListener("DOMContentLoaded", () => {
         }
         
     }, 7000);
-
-    // isResponsiveMode = windowWidth < 500;
 });
 
 window.addEventListener("resize", (e) => {

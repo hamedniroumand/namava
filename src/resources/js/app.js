@@ -1,6 +1,3 @@
-import $ from "jquery"
-import "@iconfu/svg-inject";
-
 let oldScroll = 0;
 document.addEventListener("scroll", (event) => {
     scrollHandler();
