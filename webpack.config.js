@@ -7,8 +7,8 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const { ESBuildMinifyPlugin } = require("esbuild-loader");
 const PurgecssPlugin = require("purgecss-webpack-plugin");
-const CopyWebpackPlugin = require('copy-webpack-plugin');
-const whitelister = require('purgecss-whitelister')
+const CopyWebpackPlugin = require("copy-webpack-plugin");
+const whitelister = require("purgecss-whitelister");
 
 const config = {
     devtool: "source-map",
@@ -60,17 +60,17 @@ const config = {
                             outputPath: "images",
                             name: "[name].[ext]",
                             esModule: false,
-                            useRelativePaths: true
+                            useRelativePaths: true,
                         },
                     },
                     // {
-                    //     loader: 'url-loader'    
+                    //     loader: 'url-loader'
                     // }
                 ],
             },
             {
                 test: /\.svg$/,
-                loader: 'svg-inline-loader'
+                loader: "svg-inline-loader",
             },
             {
                 test: /\.(woff|ttf|eot|otf|woff2)$/,
@@ -104,11 +104,16 @@ const config = {
                 test: /\.hbs$/,
                 use: [
                     {
-                        loader: 'handlebars-loader',
-                        // query: { inlineRequires: '\/images\/' }
-                    }
-                ]
-            }
+                        loader: "handlebars-loader",
+                        options: {
+                            helperDirs: path.join(__dirname, "src/helpers"),
+                            precompileOptions: {
+                                knownHelpersOnly: false,
+                            },
+                        },
+                    },
+                ],
+            },
         ],
     },
     plugins: [
@@ -118,16 +123,16 @@ const config = {
                 {
                     from: path.resolve(__dirname, "src", "resources", "img"),
                     to: path.resolve(__dirname, "dist", "images"),
-                }
-            ]
+                },
+            ],
         }),
         new HtmlWebpackPlugin({
             title: "Home Page",
             template: path.join(__dirname, "src", "pages", "index.hbs"),
             filename: "index.html",
-            chunks: ["styles", "app", "home"],
-            templateParameters: require("./data.json")
-        }),        
+            chunks: ["styles", "home", "vendors~app~home"],
+            templateParameters: require("./data.json"),
+        }),
         new CleanWebpackPlugin(),
     ],
 };
@@ -135,25 +140,27 @@ const config = {
 module.exports = (env, { mode }) => {
     let isDevelopment = mode === "development";
 
-    if (isDevelopment) { // is Development Mode
+    if (isDevelopment) {
+        // is Development Mode
         config.output.filename = "[name].bundle.js";
         config.devServer = {
             contentBase: path.resolve(__dirname, "dist"),
             index: "index.html",
             port: 8888,
         };
-    } else { // is Production Mode
+    } else {
+        // is Production Mode
         config.output.filename = "[name].bundle.[contenthash].js";
         config.plugins.push(
             new MiniCssExtractPlugin({
                 filename: "[name].[contenthash].css",
             }),
-            new PurgecssPlugin({
-                paths: glob.sync(`${path.join(__dirname, "src")}/**/*.hbs`, {
-                    nodir: true,
-                    whitelist: whitelister('./src/resources/scss/main.scss') //, './src/resources/scss/3slick-theme.css'
-                })                
-            })
+            // new PurgecssPlugin({
+            //     paths: glob.sync(`${path.join(__dirname, "src")}/**/*.hbs`, {
+            //         nodir: true,
+            //         css: ["./src/resources/scss/main.scss"],
+            //     }),
+            // })
         );
     }
 

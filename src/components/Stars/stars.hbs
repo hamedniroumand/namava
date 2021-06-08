@@ -1,0 +1,11 @@
+<div class="info">
+    <h3 class="section-title">{{ title }}</h3>
+</div>
+
+<div class="star-items default-row-items">
+    {{#each data as |star| }}
+    <div class="star-item">
+        {{> starItem image=star.castImageUrl name=star.castName }}
+    </div>
+    {{/each}}
+</div>

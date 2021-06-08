@@ -1,11 +1,14 @@
+$nav-padding: 1rem;
+
 nav {
+    padding: $container-padding;
     height: 80px;
     background-image: linear-gradient(
         to bottom,
         rgba(18, 18, 18, 1),
         rgba(18, 18, 18, 0)
     );
-    position: fixed;
+    position: absolute;
     z-index: 100;
     top: 0;
     left: 0;
@@ -13,19 +16,37 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    transition: all .5s;
+
+    &.fix {
+        position: fixed;
+        background-color: rgba(18,18,18,1);
+    }
 
     .right {
-        padding-right: 1rem;
         display: flex;
         .logo {
+            display: flex;
+            align-items: center;
             a {
                 display: block;
                 height: auto;
+            }
+
+            .tablet-menu {
+                display: none;
+                @include responsive(md) {
+                    display: block;
+                    margin-left: 0.75rem;
+                }
             }
         }
 
         .menu {
             margin-right: 1.5rem;
+            @include responsive(md) {
+                display: none;
+            }
             ul {
                 height: 100%;
                 display: flex;
@@ -37,6 +58,15 @@ nav {
                     }
                     font-size: 0.85rem;
                 }
+            }
+        }
+    }
+
+    .left {
+        .icon-container {
+            font-size: 1.6rem;
+            &:not(:first-child) {
+                margin-right: 0.7rem;
             }
         }
     }

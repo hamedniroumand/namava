@@ -1,6 +1,7 @@
-{{> ../menu }}
-<header id="header" class="">
-    {{#each header.slideShow}}
-        {{> headerItem active=@index title=title logo=logo description=description infoDescription=infoDescription info=info background=background }}
-    {{~/each}}
-</header>
+<nav>
+    {{> ../menu }}
+</nav>
+
+{{#each header.slideShow}}
+    {{> headerItem active=@index title=title logo=logo description=description infoDescription=infoDescription info=info background=background }}
+{{~/each}}

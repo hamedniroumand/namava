@@ -1,0 +1,18 @@
+.collection {
+    padding: $section-padding;
+
+    .collection-item {
+        margin-left: $row-item-gap;
+        a {
+            &:hover {
+                color: inherit;
+            }
+            img {
+                width: 26rem;
+            }
+            p {
+                font-size: 0.8rem;
+            }
+        }
+    }
+}

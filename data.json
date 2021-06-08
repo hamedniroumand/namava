@@ -3,30 +3,37 @@
         "menu": [
             {
                 "title": "خانه",
+                "icon": "images/menu/home.svg",
                 "link": "/"
             },
             {
                 "title": "فیلم ها",
+                "icon": "images/menu/film.svg",
                 "link": "/"
             },
             {
                 "title": "سریال ها",
+                "icon": "images/menu/serie.svg",
                 "link": "/"
             },
             {
                 "title": "دسته بندی",
+                "icon": "images/menu/category.svg",
                 "link": "/"
             },
             {
                 "title": "تازه ها",
+                "icon": "images/menu/new.svg",
                 "link": "/"
             },
             {
                 "title": "کودکان",
+                "icon": "images/menu/children.svg",
                 "link": "/"
             },
             {
                 "title": "نماوا مگ",
+                "icon": "images/menu/blog.svg",
                 "link": "/"
             }
         ],
@@ -34,60 +41,83 @@
             {
                 "logo": "./images/movie-logo/movie-logo-1.png",
                 "background": "./images/wide/wide-1.jpg",
+                "responsive_background": "./images/long/long-1.jpg",
                 "title": "گیسو",
                 "description": "رضا در مخمصه‌ای افتاده که برای بیرون آمدن از آن به کمک سهیل و پیمان نیاز دارد. اما نقشه آن‌ها آن‌طور که باید پیش نمی‌رود و اتفاقاتی رخ می‌دهد که کنترل اوضاع را از دست همه خارج می‌کند و ...",
                 "infoDescription": "قسمت جدید گیسو، چهارشنبه ها ساعت 20 در نماوا",
                 "info": [
                     {
                         "title": "ستارگان",
-                        "values": ["مهران مدیری", "ویشکا آسایش", "محمد بحرانی"]
+                        "values": [
+                            "مهران مدیری",
+                            "ویشکا آسایش",
+                            "محمد بحرانی"
+                        ]
                     },
                     {
                         "title": "کارگردان",
-                        "values": ["مهران مدیری"]
+                        "values": [
+                            "مهران مدیری"
+                        ]
                     }
                 ]
             },
             {
                 "logo": "./images/movie-logo/movie-logo-2.png",
                 "background": "./images/wide/wide-2.jpg",
+                "responsive_background": "./images/long/long-2.jpg",
                 "title": "همرفیق",
                 "description": "این برنامه ترکیبی و گفت‌وگو محور با اجرای شهاب حسینی و حضور مهمان‌های سرشناس، در حال و هوایی تازه مخاطبان‌اش را شریک لحظاتی گرم و جذاب می‌کند.",
                 "infoDescription": "قسمت جدید همرفیق، پنج‌شنبه‌ها ساعت ۲۱ در نماوا",
                 "info": [
                     {
                         "title": "ستارگان",
-                        "values": ["مهدی سلطانی", "حسین پاکدل", "پانته آ بهرامی"]
+                        "values": [
+                            "مهدی سلطانی",
+                            "حسین پاکدل",
+                            "پانته آ بهرامی"
+                        ]
                     }
                 ]
             },
             {
                 "logo": "./images/movie-logo/movie-logo-3.png",
                 "background": "./images/wide/wide-3.jpg",
+                "responsive_background": "./images/long/long-3.jpg",
                 "title": "پیشگو",
                 "description": "در این برنامه ترکیبی و گفت‌و‌گو محور، پژمان جمشیدی در کنار چهره‌های آشنای عرصه هنر و ورزش، از رویاهایی می‌گویند که می‌توانند در آینده‌ای نزدیک تبدیل به خاطرات ما شوند.",
                 "infoDescription": "قسمت جدید پیشگو، شنبه‌ها ساعت ۲۰ در نماوا",
                 "info": [
                     {
                         "title": "ستارگان",
-                        "values": ["باران کوثری", "امیر آقایی"]
+                        "values": [
+                            "باران کوثری",
+                            "امیر آقایی"
+                        ]
                     }
                 ]
             },
             {
-                "logo": "./images/movie-logo/movie-logo-4.png",
-                "background": "./images/wide/wide-4.jpg",
+                "logo": "./images/movie-logo/movie-logo-5.png",
+                "background": "./images/wide/wide-5.jpg",
+                "responsive_background": "./images/long/long-5.jpg",
                 "title": "دراکولا",
                 "description": "به کامران کامروا خبر می‌رسد که پسرش را به جرم راه‌اندازی سایت‌های شرطبندی در خارج از کشور دستگیر کرده‌اند و ماموران به زودی به سراغ خود او خواهند آمد. کامروا پس از شنیدن این خبر به همراه چمچاره سوار هلیکوپتر شخصی‌اش می‌شود و ...",
                 "infoDescription": "قسمت جدید دراکولا به همراه پشت صحنه، سه‌شنبه‌ها ساعت ۲۰ در نماوا",
                 "info": [
                     {
                         "title": "ستارگان",
-                        "values": ["مهران مدیری", "ویشکا آسایش", "محمد بحرانی"]
+                        "values": [
+                            "مهران مدیری",
+                            "ویشکا آسایش",
+                            "محمد بحرانی"
+                        ]
                     },
                     {
                         "title": "کارگردان",
-                        "values": ["مهران مدیری"]
+                        "values": [
+                            "مهران مدیری"
+                        ]
                     }
                 ]
             }
@@ -109,6 +139,1077 @@
         {
             "background": "./images/offers/offer-4.jpg",
             "url": "#"
+        }
+    ],
+    "videos": [
+        {
+            "title": "ویژه",
+            "data": [
+                {
+                    "id": 87120,
+                    "isSerie": true,
+                    "type": "Series",
+                    "caption": "هفت خان",
+                    "slug": "",
+                    "imageUrl": "https://www.namava.ir/Content/Upload/Images/cc02028c-d0b0-4c9f-84b8-da69b7c94c7b.jpg",
+                    "rentDuration": null
+                },
+                {
+                    "id": 72396,
+                    "isSerie": true,
+                    "type": "Series",
+                    "caption": "همرفیق",
+                    "slug": "",
+                    "imageUrl": "https://www.namava.ir/Content/Upload/Images/43abf448-93de-4e20-95ee-170625b009ad.jpg",
+                    "rentDuration": null
+                },
+                {
+                    "id": 84117,
+                    "isSerie": true,
+                    "type": "Series",
+                    "caption": "گیسو",
+                    "slug": "",
+                    "imageUrl": "https://www.namava.ir/Content/Upload/Images/9e9ef88a-67bc-4029-b6e0-f3a767a98dbb.JPG",
+                    "rentDuration": null
+                },
+                {
+                    "id": 86546,
+                    "isSerie": true,
+                    "type": "Series",
+                    "caption": "دراکولا",
+                    "slug": "",
+                    "imageUrl": "https://www.namava.ir/Content/Upload/Images/37967619-e97a-4f96-9641-c433c54be7b0.jpg",
+                    "rentDuration": null
+                },
+                {
+                    "id": 95679,
+                    "isSerie": true,
+                    "type": "Series",
+                    "caption": "پیشگو",
+                    "slug": "",
+                    "imageUrl": "https://www.namava.ir/Content/Upload/Images/b4a96a18-0f65-43ca-819c-1b96e68518e4.jpg",
+                    "rentDuration": null
+                },
+                {
+                    "id": 96952,
+                    "isSerie": true,
+                    "type": "Series",
+                    "caption": "زوزو",
+                    "slug": "",
+                    "imageUrl": "https://www.namava.ir/Content/Upload/Images/8f9ef4cf-67bc-42d6-87b1-52cacf15b9d1.jpg",
+                    "rentDuration": null
+                },
+                {
+                    "id": 97324,
+                    "isMovie": true,
+                    "type": "Movie",
+                    "caption": "احضار ۳: شیطان وادارم کرد",
+                    "slug": "CategorySlider",
+                    "imageUrl": "https://www.namava.ir/Content/Upload/Images/b9c9b8d8-a938-4240-a6c3-fad6fd74b1ac.jpg",
+                    "rentDuration": null
+                },
+                {
+                    "id": 97015,
+                    "isSerie": true,
+                    "type": "Series",
+                    "caption": "ماجراهای شرلوک هولمز",
+                    "slug": "",
+                    "imageUrl": "https://www.namava.ir/Content/Upload/Images/3e3d6a32-c39e-4aae-b5ce-7669d2afc934.jpg",
+                    "rentDuration": null
+                },
+                {
+                    "id": 97336,
+                    "isMovie": true,
+                    "type": "Movie",
+                    "caption": "سریع و خشمگین ۵",
+                    "slug": "CategorySlider",
+                    "imageUrl": "https://www.namava.ir/Content/Upload/Images/da372fc6-12ca-42e5-83b5-7a716637c525.jpg",
+                    "rentDuration": null
+                },
+                {
+                    "id": 82810,
+                    "isMovie": true,
+                    "type": "Movie",
+                    "caption": "حفاری",
+                    "slug": "CategorySlider",
+                    "imageUrl": "https://www.namava.ir/Content/Upload/Images/8a96098e-5399-498a-aaa7-ad3a683a523f.jpg",
+                    "rentDuration": null
+                },
+                {
+                    "id": 97306,
+                    "isMovie": true,
+                    "type": "Movie",
+                    "caption": "تیرانداز",
+                    "slug": "CategorySlider",
+                    "imageUrl": "https://www.namava.ir/Content/Upload/Images/28bfb6a7-0bd1-4d90-9b80-1c655978f7d0.jpg",
+                    "rentDuration": null
+                },
+                {
+                    "id": 97164,
+                    "isMovie": true,
+                    "type": "Movie",
+                    "caption": "همه یا هیچ: داستان ناگفته جیمز باند ۰۰۷",
+                    "slug": "CategorySlider",
+                    "imageUrl": "https://www.namava.ir/Content/Upload/Images/89d15f41-49bc-4a84-aa15-2d482cc40dcc.jpg",
+                    "rentDuration": null
+                },
+                {
+                    "id": 79158,
+                    "isSerie": true,
+                    "type": "Series",
+                    "caption": "سیاوش",
+                    "slug": "",
+                    "imageUrl": "https://www.namava.ir/Content/Upload/Images/e360dc7c-106b-4a88-8541-52a10bd9455c.jpg",
+                    "rentDuration": null
+                },
+                {
+                    "id": 89931,
+                    "isMovie": true,
+                    "type": "Movie",
+                    "caption": "کروئلا",
+                    "slug": "CategorySlider",
+                    "imageUrl": "https://www.namava.ir/Content/Upload/Images/e60a454f-bcf8-4c73-82e3-4f1da64e1c6d.jpg",
+                    "rentDuration": null
+                },
+                {
+                    "id": 96909,
+                    "isMovie": true,
+                    "type": "Movie",
+                    "caption": "تدی",
+                    "slug": "CategorySlider",
+                    "imageUrl": "https://www.namava.ir/Content/Upload/Images/45443b7b-c94b-4360-a1a0-e1393a44dd51.jpg",
+                    "rentDuration": null
+                },
+                {
+                    "id": 92659,
+                    "isMovie": true,
+                    "type": "Movie",
+                    "caption": "بی وجدان",
+                    "slug": "CategorySlider",
+                    "imageUrl": "https://www.namava.ir/Content/Upload/Images/37d094b6-0cd3-41c7-a098-f15c80853b82.jpg",
+                    "rentDuration": null
+                },
+                {
+                    "id": 97076,
+                    "isSerie": true,
+                    "type": "Series",
+                    "caption": "استیلواتر",
+                    "slug": "",
+                    "imageUrl": "https://www.namava.ir/Content/Upload/Images/afcd01d7-962f-440c-bcb8-b64dac7aff5e.jpg",
+                    "rentDuration": null
+                },
+                {
+                    "id": 19813,
+                    "isSerie": true,
+                    "type": "Series",
+                    "caption": "محافظ",
+                    "slug": "",
+                    "imageUrl": "https://www.namava.ir/Content/Upload/Images/4dcfbe8a-5f12-4c96-99e2-606d6052f187.jpg",
+                    "rentDuration": null
+                },
+                {
+                    "id": 97067,
+                    "isMovie": true,
+                    "type": "Movie",
+                    "caption": "بی عنوان",
+                    "slug": "CategorySlider",
+                    "imageUrl": "https://www.namava.ir/Content/Upload/Images/3c432d6c-7154-43f9-9799-b44c524dc3d7.jpg",
+                    "rentDuration": null
+                },
+                {
+                    "id": 96818,
+                    "isMovie": true,
+                    "type": "Movie",
+                    "caption": "پدیده ای به نام کوبی برایانت",
+                    "slug": "CategorySlider",
+                    "imageUrl": "https://www.namava.ir/Content/Upload/Images/240152a0-affa-4418-8428-8c18202f9a22.jpg",
+                    "rentDuration": null
+                }
+            ]
+        },
+        {
+            "title": "تازه های نماوا",
+            "data": [
+                {
+                    "id": 97374,
+                    "isSerie": true,
+                    "type": "Series",
+                    "caption": "گنجینه",
+                    "slug": "",
+                    "imageUrl": "https://www.namava.ir/Content/Upload/Images/06f736d0-d5fe-4afc-95b1-7fea83757f16.jpg",
+                    "rentDuration": null
+                },
+                {
+                    "id": 97015,
+                    "isSerie": true,
+                    "type": "Series",
+                    "caption": "ماجراهای شرلوک هولمز",
+                    "slug": "",
+                    "imageUrl": "https://www.namava.ir/Content/Upload/Images/3e3d6a32-c39e-4aae-b5ce-7669d2afc934.jpg",
+                    "rentDuration": null
+                },
+                {
+                    "id": 91424,
+                    "isMovie": true,
+                    "type": "Movie",
+                    "caption": "شش دقیقه تا نیمه شب",
+                    "slug": "CategorySlider",
+                    "imageUrl": "https://www.namava.ir/Content/Upload/Images/a79c583e-5518-471f-8cf3-6e5b1626950a.jpg",
+                    "rentDuration": null
+                },
+                {
+                    "id": 97177,
+                    "isMovie": true,
+                    "type": "Movie",
+                    "caption": "اونو میشناسی",
+                    "slug": "CategorySlider",
+                    "imageUrl": "https://www.namava.ir/Content/Upload/Images/4de707b1-158e-408f-9852-9d37a8b93c06.jpg",
+                    "rentDuration": null
+                },
+                {
+                    "id": 97336,
+                    "isMovie": true,
+                    "type": "Movie",
+                    "caption": "سریع و خشمگین ۵",
+                    "slug": "CategorySlider",
+                    "imageUrl": "https://www.namava.ir/Content/Upload/Images/da372fc6-12ca-42e5-83b5-7a716637c525.jpg",
+                    "rentDuration": null
+                },
+                {
+                    "id": 92189,
+                    "isMovie": true,
+                    "type": "Movie",
+                    "caption": "انسان هوشمند",
+                    "slug": "CategorySlider",
+                    "imageUrl": "https://www.namava.ir/Content/Upload/Images/b2681fcf-b0f2-44b9-9589-20c437026aa6.jpg",
+                    "rentDuration": null
+                },
+                {
+                    "id": 97324,
+                    "isMovie": true,
+                    "type": "Movie",
+                    "caption": "احضار ۳: شیطان وادارم کرد",
+                    "slug": "CategorySlider",
+                    "imageUrl": "https://www.namava.ir/Content/Upload/Images/b9c9b8d8-a938-4240-a6c3-fad6fd74b1ac.jpg",
+                    "rentDuration": null
+                },
+                {
+                    "id": 97131,
+                    "isSerie": true,
+                    "type": "Series",
+                    "caption": "حال و هوای زمین",
+                    "slug": "",
+                    "imageUrl": "https://www.namava.ir/Content/Upload/Images/4767d8e3-61f2-4004-b3a6-f5f40357f421.jpg",
+                    "rentDuration": null
+                },
+                {
+                    "id": 86635,
+                    "isMovie": true,
+                    "type": "Movie",
+                    "caption": "لگو دی سی دختران ابر قهرمان",
+                    "slug": "CategorySlider",
+                    "imageUrl": "https://www.namava.ir/Content/Upload/Images/b24bdfdb-cac5-4aa4-80a6-2388886c4d60.JPG",
+                    "rentDuration": null
+                },
+                {
+                    "id": 96952,
+                    "isSerie": true,
+                    "type": "Series",
+                    "caption": "زوزو",
+                    "slug": "",
+                    "imageUrl": "https://www.namava.ir/Content/Upload/Images/8f9ef4cf-67bc-42d6-87b1-52cacf15b9d1.jpg",
+                    "rentDuration": null
+                },
+                {
+                    "id": 77900,
+                    "isMovie": true,
+                    "type": "Movie",
+                    "caption": "هیولاهای انسان",
+                    "slug": "CategorySlider",
+                    "imageUrl": "https://www.namava.ir/Content/Upload/Images/08492e9e-2d9c-48a0-aa82-29c26db5bcba.jpg",
+                    "rentDuration": null
+                },
+                {
+                    "id": 90671,
+                    "isMovie": true,
+                    "type": "Movie",
+                    "caption": "جهنم خونین",
+                    "slug": "CategorySlider",
+                    "imageUrl": "https://www.namava.ir/Content/Upload/Images/b933bea7-7c71-46ba-bdff-87e28148f93e.jpg",
+                    "rentDuration": null
+                },
+                {
+                    "id": 96761,
+                    "isSerie": true,
+                    "type": "Series",
+                    "caption": "پایانگونه",
+                    "slug": "",
+                    "imageUrl": "https://www.namava.ir/Content/Upload/Images/f709c351-060b-4906-b9b0-6e7345c082d1.jpg",
+                    "rentDuration": null
+                },
+                {
+                    "id": 97306,
+                    "isMovie": true,
+                    "type": "Movie",
+                    "caption": "تیرانداز",
+                    "slug": "CategorySlider",
+                    "imageUrl": "https://www.namava.ir/Content/Upload/Images/28bfb6a7-0bd1-4d90-9b80-1c655978f7d0.jpg",
+                    "rentDuration": null
+                },
+                {
+                    "id": 97164,
+                    "isMovie": true,
+                    "type": "Movie",
+                    "caption": "همه یا هیچ: داستان ناگفته جیمز باند ۰۰۷",
+                    "slug": "CategorySlider",
+                    "imageUrl": "https://www.namava.ir/Content/Upload/Images/89d15f41-49bc-4a84-aa15-2d482cc40dcc.jpg",
+                    "rentDuration": null
+                },
+                {
+                    "id": 96701,
+                    "isSerie": true,
+                    "type": "Series",
+                    "caption": "وینچنزو",
+                    "slug": "",
+                    "imageUrl": "https://www.namava.ir/Content/Upload/Images/3ec1cfe5-a0b1-49b9-82f3-ce1ed04af98a.jpg",
+                    "rentDuration": null
+                },
+                {
+                    "id": 96326,
+                    "isSerie": true,
+                    "type": "Series",
+                    "caption": "شین آشپز",
+                    "slug": "",
+                    "imageUrl": "https://www.namava.ir/Content/Upload/Images/20709d33-5546-4c33-812d-1c5eb9323631.jpg",
+                    "rentDuration": null
+                },
+                {
+                    "id": 96957,
+                    "isMovie": true,
+                    "type": "Movie",
+                    "caption": "بل و سباستین",
+                    "slug": "CategorySlider",
+                    "imageUrl": "https://www.namava.ir/Content/Upload/Images/b920f872-a3d0-4901-80d2-d17071721c7e.jpg",
+                    "rentDuration": null
+                },
+                {
+                    "id": 96314,
+                    "isMovie": true,
+                    "type": "Movie",
+                    "caption": "نگهبان ماه",
+                    "slug": "CategorySlider",
+                    "imageUrl": "https://www.namava.ir/Content/Upload/Images/2e5f7ed1-52f9-4967-9297-4f733a100082.jpg",
+                    "rentDuration": null
+                },
+                {
+                    "id": 97198,
+                    "isSerie": true,
+                    "type": "Series",
+                    "caption": "آنگوس و شریل",
+                    "slug": "",
+                    "imageUrl": "https://www.namava.ir/Content/Upload/Images/39739900-7a48-481a-aa8d-7cf716d06e20.jpg",
+                    "rentDuration": null
+                }
+            ]
+        },
+        {
+            "title": "سریال های بروز شده",
+            "data": [
+                {
+                    "episodId": 97406,
+                    "seriesId": 97374,
+                    "isEpisode": true,
+                    "episodCaption": "فصل ۱ قسمت ۱۰",
+                    "seriesCaption": "گنجینه",
+                    "seriesImageUrl": "https://www.namava.ir/Content/Upload/Images/06f736d0-d5fe-4afc-95b1-7fea83757f16.jpg"
+                },
+                {
+                    "episodId": 97163,
+                    "seriesId": 19511,
+                    "isEpisode": true,
+                    "episodCaption": "فصل ۴ قسمت ۶",
+                    "seriesCaption": "کارمن سندیگو",
+                    "seriesImageUrl": "https://www.namava.ir/Content/Upload/Images/15bc1fcc-0555-47ef-ab1d-e57d76eca118.jpg"
+                },
+                {
+                    "episodId": 95445,
+                    "seriesId": 37004,
+                    "isEpisode": true,
+                    "episodCaption": "فصل ۴ قسمت ۱",
+                    "seriesCaption": "رعد سیاه",
+                    "seriesImageUrl": "https://www.namava.ir/Content/Upload/Images/6e36c597-6d10-4f24-a0e7-f363457c374d.jpg"
+                },
+                {
+                    "episodId": 97034,
+                    "seriesId": 97015,
+                    "isEpisode": true,
+                    "episodCaption": "فصل ۱ قسمت ۷",
+                    "seriesCaption": "ماجراهای شرلوک هولمز",
+                    "seriesImageUrl": "https://www.namava.ir/Content/Upload/Images/3e3d6a32-c39e-4aae-b5ce-7669d2afc934.jpg"
+                },
+                {
+                    "episodId": 97361,
+                    "seriesId": 87120,
+                    "isEpisode": true,
+                    "episodCaption": "فصل ۱ قسمت ۱۱",
+                    "seriesCaption": "هفت خان",
+                    "seriesImageUrl": "https://www.namava.ir/Content/Upload/Images/cc02028c-d0b0-4c9f-84b8-da69b7c94c7b.jpg"
+                },
+                {
+                    "episodId": 96006,
+                    "seriesId": 95987,
+                    "isEpisode": true,
+                    "episodCaption": "فصل ۱ قسمت ۶",
+                    "seriesCaption": "هفت نوع ابهام",
+                    "seriesImageUrl": "https://www.namava.ir/Content/Upload/Images/eb217b3d-c73a-4562-ad42-5b88c1b3d7a9.jpg"
+                },
+                {
+                    "episodId": 91052,
+                    "seriesId": 81471,
+                    "isEpisode": true,
+                    "episodCaption": "فصل ۱ قسمت ۱۶",
+                    "seriesCaption": "سرنوشت",
+                    "seriesImageUrl": "https://www.namava.ir/Content/Upload/Images/3faa431f-644b-4b89-b8f7-3d621f731e23.jpg"
+                },
+                {
+                    "episodId": 96816,
+                    "seriesId": 95956,
+                    "isEpisode": true,
+                    "episodCaption": "فصل ۱ قسمت ۶",
+                    "seriesCaption": "داوطلب",
+                    "seriesImageUrl": "https://www.namava.ir/Content/Upload/Images/b58dcd74-a8c3-4886-8ffe-d16b515296f0.jpg"
+                },
+                {
+                    "episodId": 96670,
+                    "seriesId": 56055,
+                    "isEpisode": true,
+                    "episodCaption": "فصل ۲ قسمت ۲۳ و ۲۴",
+                    "seriesCaption": "گودال",
+                    "seriesImageUrl": "https://www.namava.ir/Content/Upload/Images/ef5b4765-7f34-41f8-b7f7-fa1195672769.jpg"
+                },
+                {
+                    "episodId": 96732,
+                    "seriesId": 95801,
+                    "isEpisode": true,
+                    "episodCaption": "فصل ۱ قسمت ۶",
+                    "seriesCaption": "بازی جوکر",
+                    "seriesImageUrl": "https://www.namava.ir/Content/Upload/Images/b0669396-1f54-4116-be5b-4ecc0f15272c.jpg"
+                },
+                {
+                    "episodId": 96462,
+                    "seriesId": 93415,
+                    "isEpisode": true,
+                    "episodCaption": "فصل ۱ قسمت ۱۶",
+                    "seriesCaption": "شاهکار بعدی آرچیبالد",
+                    "seriesImageUrl": "https://www.namava.ir/Content/Upload/Images/d364d572-29bc-428f-abd4-eab9b9e55460.jpg"
+                },
+                {
+                    "episodId": 96760,
+                    "seriesId": 91554,
+                    "isEpisode": true,
+                    "episodCaption": "فصل ۱ قسمت ۴۰",
+                    "seriesCaption": "ابی هچر",
+                    "seriesImageUrl": "https://www.namava.ir/Content/Upload/Images/9c529034-8ba0-4e6b-b777-7fc1c86e5cf4.jpg"
+                },
+                {
+                    "episodId": 96662,
+                    "seriesId": 96116,
+                    "isEpisode": true,
+                    "episodCaption": "فصل ۱ قسمت ۴",
+                    "seriesCaption": "زندگی و مرگ رابرت درست",
+                    "seriesImageUrl": "https://www.namava.ir/Content/Upload/Images/71082bce-c42b-4b33-a38c-0e91737af5ab.jpg"
+                },
+                {
+                    "episodId": 83286,
+                    "seriesId": 82918,
+                    "isEpisode": true,
+                    "episodCaption": "فصل ۱ قسمت ۸",
+                    "seriesCaption": "جنگل اسرار",
+                    "seriesImageUrl": "https://www.namava.ir/Content/Upload/Images/e57b2f12-3cbd-41d4-a4a1-558373664ecf.JPG"
+                },
+                {
+                    "episodId": 97160,
+                    "seriesId": 97131,
+                    "isEpisode": true,
+                    "episodCaption": "فصل ۱ قسمت ۵",
+                    "seriesCaption": "حال و هوای زمین",
+                    "seriesImageUrl": "https://www.namava.ir/Content/Upload/Images/4767d8e3-61f2-4004-b3a6-f5f40357f421.jpg"
+                },
+                {
+                    "episodId": 97323,
+                    "seriesId": 94697,
+                    "isEpisode": true,
+                    "episodCaption": "فصل ۱ قسمت ۱۳",
+                    "seriesCaption": "پلی پاکت",
+                    "seriesImageUrl": "https://www.namava.ir/Content/Upload/Images/af9e36fe-a252-464f-bc7d-9aa86dabf423.jpg"
+                },
+                {
+                    "episodId": 97197,
+                    "seriesId": 96952,
+                    "isEpisode": true,
+                    "episodCaption": "فصل ۱ قسمت ۱۰",
+                    "seriesCaption": "زوزو",
+                    "seriesImageUrl": "https://www.namava.ir/Content/Upload/Images/8f9ef4cf-67bc-42d6-87b1-52cacf15b9d1.jpg"
+                },
+                {
+                    "episodId": 96664,
+                    "seriesId": 55664,
+                    "isEpisode": true,
+                    "episodCaption": "فصل ۱ قسمت ۷۱ و ۷۲",
+                    "seriesCaption": "داستان ما",
+                    "seriesImageUrl": "https://www.namava.ir/Content/Upload/Images/61436b53-9c3f-4795-8cbc-d6e411cf7c7a.JPG"
+                },
+                {
+                    "episodId": 96728,
+                    "seriesId": 91441,
+                    "isEpisode": true,
+                    "episodCaption": "فصل ۱ قسمت ۲۰",
+                    "seriesCaption": "دکتر استون",
+                    "seriesImageUrl": "https://www.namava.ir/Content/Upload/Images/ede78479-d8b7-4f56-8576-2918d6d772ee.jpg"
+                },
+                {
+                    "episodId": 96678,
+                    "seriesId": 55665,
+                    "isEpisode": true,
+                    "episodCaption": "فصل ۴ قسمت ۱۲",
+                    "seriesCaption": "کیم پاسیبل",
+                    "seriesImageUrl": "https://www.namava.ir/Content/Upload/Images/a65467ef-5226-44e4-8c1e-c20f0502b431.jpg"
+                }
+            ]
+        },
+        {
+            "title": "دوبله های نماوا",
+            "data": [
+                {
+                    "id": 97336,
+                    "isMovie": true,
+                    "type": "Movie",
+                    "caption": "سریع و خشمگین ۵",
+                    "slug": "CategorySlider",
+                    "isDubbed": true,
+                    "imageUrl": "https://www.namava.ir/Content/Upload/Images/7d8d4134-cdbe-41bc-87dd-0e00bba0d010.jpg",
+                    "rentDuration": null
+                },
+                {
+                    "id": 86635,
+                    "isMovie": true,
+                    "type": "Movie",
+                    "caption": "لگو دی سی دختران ابر قهرمان",
+                    "slug": "CategorySlider",
+                    "isDubbed": true,
+                    "imageUrl": "https://www.namava.ir/Content/Upload/Images/eec9bbaa-fbea-40c0-aa03-89a94d06191b.jpg",
+                    "rentDuration": null
+                },
+                {
+                    "id": 96761,
+                    "isSerie": true,
+                    "type": "Series",
+                    "caption": "پایانگونه",
+                    "slug": "",
+                    "isDubbed": true,
+                    "imageUrl": "https://www.namava.ir/Content/Upload/Images/d25f58ab-ef3d-48d0-8009-c48e983d653f.jpg",
+                    "rentDuration": null
+                },
+                {
+                    "id": 97306,
+                    "isMovie": true,
+                    "type": "Movie",
+                    "caption": "تیرانداز",
+                    "slug": "CategorySlider",
+                    "isDubbed": true,
+                    "imageUrl": "https://www.namava.ir/Content/Upload/Images/87bf5ce6-0aa6-4e8c-b6df-d2b14b24e130.jpg",
+                    "rentDuration": null
+                },
+                {
+                    "id": 97164,
+                    "isMovie": true,
+                    "type": "Movie",
+                    "caption": "همه یا هیچ: داستان ناگفته جیمز باند ۰۰۷",
+                    "slug": "CategorySlider",
+                    "isDubbed": true,
+                    "imageUrl": "https://www.namava.ir/Content/Upload/Images/ab476924-312d-4d5f-bb53-030b09e8a9f6.jpg",
+                    "rentDuration": null
+                },
+                {
+                    "id": 96701,
+                    "isSerie": true,
+                    "type": "Series",
+                    "caption": "وینچنزو",
+                    "slug": "",
+                    "isDubbed": true,
+                    "imageUrl": "https://www.namava.ir/Content/Upload/Images/c7f7b73d-429e-4264-a99d-87aaf768d24f.jpg",
+                    "rentDuration": null
+                },
+                {
+                    "id": 96957,
+                    "isMovie": true,
+                    "type": "Movie",
+                    "caption": "بل و سباستین",
+                    "slug": "CategorySlider",
+                    "isDubbed": true,
+                    "imageUrl": "https://www.namava.ir/Content/Upload/Images/ac4867fe-2f42-4f41-ac71-da04f2645f57.jpg",
+                    "rentDuration": null
+                },
+                {
+                    "id": 96314,
+                    "isMovie": true,
+                    "type": "Movie",
+                    "caption": "نگهبان ماه",
+                    "slug": "CategorySlider",
+                    "isDubbed": true,
+                    "imageUrl": "https://www.namava.ir/Content/Upload/Images/46776c62-21fe-43f9-809a-e9b0622e2ec7.jpg",
+                    "rentDuration": null
+                },
+                {
+                    "id": 96909,
+                    "isMovie": true,
+                    "type": "Movie",
+                    "caption": "تدی",
+                    "slug": "CategorySlider",
+                    "isDubbed": true,
+                    "imageUrl": "https://www.namava.ir/Content/Upload/Images/01f51dfa-bc57-449f-a877-f8f1e1ae5b31.jpg",
+                    "rentDuration": null
+                },
+                {
+                    "id": 97076,
+                    "isSerie": true,
+                    "type": "Series",
+                    "caption": "استیلواتر",
+                    "slug": "",
+                    "isDubbed": true,
+                    "imageUrl": "https://www.namava.ir/Content/Upload/Images/3db4c530-daa5-48e9-93b6-b93872bd8fab.jpg",
+                    "rentDuration": null
+                },
+                {
+                    "id": 96818,
+                    "isMovie": true,
+                    "type": "Movie",
+                    "caption": "پدیده ای به نام کوبی برایانت",
+                    "slug": "CategorySlider",
+                    "isDubbed": true,
+                    "imageUrl": "https://www.namava.ir/Content/Upload/Images/f8fe41dc-fb00-43fc-a046-cfa580e7a83e.jpg",
+                    "rentDuration": null
+                },
+                {
+                    "id": 96663,
+                    "isSerie": true,
+                    "type": "Series",
+                    "caption": "شهروند فضایی",
+                    "slug": "",
+                    "isDubbed": true,
+                    "imageUrl": "https://www.namava.ir/Content/Upload/Images/75647741-8abe-4cdd-b65a-540b4ccbc1ba.jpg",
+                    "rentDuration": null
+                },
+                {
+                    "id": 96116,
+                    "isSerie": true,
+                    "type": "Series",
+                    "caption": "زندگی و مرگ رابرت درست",
+                    "slug": "",
+                    "isDubbed": true,
+                    "imageUrl": "https://www.namava.ir/Content/Upload/Images/8c5d1d3c-ee91-4c5a-8449-70b9cd17c217.jpg",
+                    "rentDuration": null
+                },
+                {
+                    "id": 96438,
+                    "isMovie": true,
+                    "type": "Movie",
+                    "caption": "هیولاهای خونگی: هتل ترانسیلوانیا",
+                    "slug": "CategorySlider",
+                    "isDubbed": true,
+                    "imageUrl": "https://www.namava.ir/Content/Upload/Images/cdd5003a-8515-46e5-a566-75ccf3264751.jpg",
+                    "rentDuration": null
+                },
+                {
+                    "id": 96353,
+                    "isMovie": true,
+                    "type": "Movie",
+                    "caption": "استاد یین یانگ",
+                    "slug": "CategorySlider",
+                    "isDubbed": true,
+                    "imageUrl": "https://www.namava.ir/Content/Upload/Images/57d12b84-f76a-40e0-8fa5-a16f65570e79.jpg",
+                    "rentDuration": null
+                },
+                {
+                    "id": 41903,
+                    "isMovie": true,
+                    "type": "Movie",
+                    "caption": "شرکت هیولاها",
+                    "slug": "CategorySlider",
+                    "isDubbed": true,
+                    "imageUrl": "https://www.namava.ir/Content/Upload/Images/02381770-c348-4c58-9f19-9845c9b63540.jpg",
+                    "rentDuration": null
+                },
+                {
+                    "id": 94884,
+                    "isMovie": true,
+                    "type": "Movie",
+                    "caption": "قدرت",
+                    "slug": "CategorySlider",
+                    "isDubbed": true,
+                    "imageUrl": "https://www.namava.ir/Content/Upload/Images/e2cbdd18-7eb5-4f9e-91c4-7e53fb3a2267.jpg",
+                    "rentDuration": null
+                },
+                {
+                    "id": 86752,
+                    "isMovie": true,
+                    "type": "Movie",
+                    "caption": "لگو دی سی دختران ابر قهرمان: فرار مغزها",
+                    "slug": "CategorySlider",
+                    "isDubbed": true,
+                    "imageUrl": "https://www.namava.ir/Content/Upload/Images/71a3bd50-fcac-41eb-a771-620ea36b8313.jpg",
+                    "rentDuration": null
+                },
+                {
+                    "id": 96105,
+                    "isMovie": true,
+                    "type": "Movie",
+                    "caption": "سوبوک",
+                    "slug": "CategorySlider",
+                    "isDubbed": true,
+                    "imageUrl": "https://www.namava.ir/Content/Upload/Images/e02ad602-f091-46ee-8db6-c39f138351b1.jpg",
+                    "rentDuration": null
+                },
+                {
+                    "id": 95987,
+                    "isSerie": true,
+                    "type": "Series",
+                    "caption": "هفت نوع ابهام",
+                    "slug": "",
+                    "isDubbed": true,
+                    "imageUrl": "https://www.namava.ir/Content/Upload/Images/c975f61c-4ef6-478f-a0c2-db072e514232.jpg",
+                    "rentDuration": null
+                }
+            ]
+        }
+    ],
+    "starts": [
+        {
+            "title": "ستارگان",
+            "data": [
+                {
+                    "castId": 3196,
+                    "castName": "کیت وینسلت",
+                    "castSlug": null,
+                    "castRole": null,
+                    "castImageUrl": "https://www.namava.ir/Content/Upload/Images/a83857a1-ae04-46e5-9e90-a5e9e4c13c5c.jpg",
+                    "displayOrder": 0
+                },
+                {
+                    "castId": 1445,
+                    "castName": "جانی دپ",
+                    "castSlug": null,
+                    "castRole": null,
+                    "castImageUrl": "https://www.namava.ir/Content/Upload/Images/f89781ea-55c3-46ab-a952-d47294ac7462.png",
+                    "displayOrder": 0
+                },
+                {
+                    "castId": 13941,
+                    "castName": "آنا د آرماس",
+                    "castSlug": null,
+                    "castRole": null,
+                    "castImageUrl": "https://www.namava.ir/Content/Upload/Images/e10c2fa2-8131-4b2f-b35c-6348b0ebcc1c.jpg",
+                    "displayOrder": 0
+                },
+                {
+                    "castId": 1148,
+                    "castName": "تـام هنکس",
+                    "castSlug": null,
+                    "castRole": null,
+                    "castImageUrl": "https://www.namava.ir/Content/Upload/Images/078d08a3-0a4a-49be-aa4f-6630185fcc96.jpg",
+                    "displayOrder": 0
+                },
+                {
+                    "castId": 711,
+                    "castName": "برد پیت",
+                    "castSlug": null,
+                    "castRole": null,
+                    "castImageUrl": "https://www.namava.ir/Content/Upload/Images/a127781f-baf6-4939-a503-ad25b17afd94.jpg",
+                    "displayOrder": 0
+                },
+                {
+                    "castId": 1591,
+                    "castName": "آنجلینا جولی",
+                    "castSlug": null,
+                    "castRole": null,
+                    "castImageUrl": "https://www.namava.ir/Content/Upload/Images/f2ec6be0-ee26-43f8-a2fe-5d37d3722dfc.jpg",
+                    "displayOrder": 0
+                },
+                {
+                    "castId": 1151,
+                    "castName": "ایمی آدامز",
+                    "castSlug": null,
+                    "castRole": null,
+                    "castImageUrl": "https://www.namava.ir/Content/Upload/Images/48161036-d5e2-4484-a802-5b7ab85cdf7c.jpg",
+                    "displayOrder": 0
+                },
+                {
+                    "castId": 999,
+                    "castName": "دواین جانسون",
+                    "castSlug": null,
+                    "castRole": null,
+                    "castImageUrl": "https://www.namava.ir/Content/Upload/Images/729772c0-5068-4fb1-bb4e-35f2bfe65bfd.jpg",
+                    "displayOrder": 0
+                },
+                {
+                    "castId": 1545,
+                    "castName": "آنتونی هاپکینز",
+                    "castSlug": null,
+                    "castRole": null,
+                    "castImageUrl": "https://www.namava.ir/Content/Upload/Images/07297705-1288-4c60-9509-9e1d26825239.jpg",
+                    "displayOrder": 0
+                },
+                {
+                    "castId": 1198,
+                    "castName": "فرانسیس مک‌دورمند",
+                    "castSlug": null,
+                    "castRole": null,
+                    "castImageUrl": "https://www.namava.ir/Content/Upload/Images/5c0c66ef-0bec-4483-9c53-12348d5f13fa.jpg",
+                    "displayOrder": 0
+                },
+                {
+                    "castId": 965,
+                    "castName": "گری اولدمن",
+                    "castSlug": null,
+                    "castRole": null,
+                    "castImageUrl": "https://www.namava.ir/Content/Upload/Images/7f34b940-3cfb-4065-ad88-cb8483262947.jpg",
+                    "displayOrder": 0
+                },
+                {
+                    "castId": 8598,
+                    "castName": "روزاموند پایک",
+                    "castSlug": null,
+                    "castRole": null,
+                    "castImageUrl": "https://www.namava.ir/Content/Upload/Images/b8974578-096b-4670-8725-0d4d6bfd2b54.jpg",
+                    "displayOrder": 0
+                },
+                {
+                    "castId": 3619,
+                    "castName": "رایان رینولدز",
+                    "castSlug": null,
+                    "castRole": null,
+                    "castImageUrl": "https://www.namava.ir/Content/Upload/Images/fc385b47-33bb-4207-aa67-6a5a3eeccbe5.jpg",
+                    "displayOrder": 0
+                },
+                {
+                    "castId": 969,
+                    "castName": "الیزابت اولسن",
+                    "castSlug": null,
+                    "castRole": null,
+                    "castImageUrl": "https://www.namava.ir/Content/Upload/Images/64e20701-e536-490c-bdb0-3800899b46f8.jpg",
+                    "displayOrder": 0
+                },
+                {
+                    "castId": 15399,
+                    "castName": "برایان کرانستون",
+                    "castSlug": null,
+                    "castRole": null,
+                    "castImageUrl": "https://www.namava.ir/Content/Upload/Images/85bb8119-6ff9-4887-a158-f71b29094065.jpg",
+                    "displayOrder": 0
+                },
+                {
+                    "castId": 3367,
+                    "castName": "رونی مارا",
+                    "castSlug": null,
+                    "castRole": null,
+                    "castImageUrl": "https://www.namava.ir/Content/Upload/Images/8e1bffc2-74e3-4b3d-b873-7b1fbd37f239.jpg",
+                    "displayOrder": 0
+                },
+                {
+                    "castId": 3009,
+                    "castName": "ادی مورفی",
+                    "castSlug": null,
+                    "castRole": null,
+                    "castImageUrl": "https://www.namava.ir/Content/Upload/Images/feeff1aa-5fb8-4f9b-9525-9dbc314b4e78.jpg",
+                    "displayOrder": 0
+                },
+                {
+                    "castId": 21993,
+                    "castName": "آنیا تیلور جوی",
+                    "castSlug": null,
+                    "castRole": null,
+                    "castImageUrl": "https://www.namava.ir/Content/Upload/Images/cb1b44ff-5b43-404f-81ae-68d4253cc843.jpg",
+                    "displayOrder": 0
+                },
+                {
+                    "castId": 890,
+                    "castName": "رایان گاسلینگ",
+                    "castSlug": null,
+                    "castRole": null,
+                    "castImageUrl": "https://www.namava.ir/Content/Upload/Images/268bb36d-00d4-4027-bf26-41cbf5ed207e.jpg",
+                    "displayOrder": 0
+                },
+                {
+                    "castId": 1031,
+                    "castName": "خواکین فینیکس",
+                    "castSlug": null,
+                    "castRole": null,
+                    "castImageUrl": "https://www.namava.ir/Content/Upload/Images/3c52f0e7-ef8d-4ef7-a10b-c729752d2990.jpg",
+                    "displayOrder": 0
+                }
+            ]
+        }
+    ],
+    "collections": [
+        {
+            "id": 27655,
+            "caption": "مجموعه فیلم های احضار",
+            "slug": "",
+            "imageUrl": "https://www.namava.ir/Content/Upload/Images/c60034bb-ed00-429e-af6f-02058c321b54.jpg",
+            "referenceId": 1140,
+            "referenceType": "PostGroup"
+        },
+        {
+            "id": 95592,
+            "caption": "مجموعه فیلم های شرک",
+            "slug": "",
+            "imageUrl": "https://www.namava.ir/Content/Upload/Images/fdb133c4-5bf0-4b61-b383-764a322145af.jpg",
+            "referenceId": 1428,
+            "referenceType": "PostGroup"
+        },
+        {
+            "id": 93458,
+            "caption": "مجموعه فیلم های حاشیه اقیانوس آرام",
+            "slug": "",
+            "imageUrl": "https://www.namava.ir/Content/Upload/Images/1843c775-a0ef-44a2-8f1b-be62cd15b23f.jpg",
+            "referenceId": 1426,
+            "referenceType": "PostGroup"
+        },
+        {
+            "id": 49526,
+            "caption": "مجموعه فیلم های گودزیلا",
+            "slug": "",
+            "imageUrl": "https://www.namava.ir/Content/Upload/Images/30239cbf-0ca5-4cd9-ba30-291ec0b9835f.jpg",
+            "referenceId": 1346,
+            "referenceType": "PostGroup"
+        },
+        {
+            "id": 35478,
+            "caption": "مجموعه فیلم های کینگ کونگ",
+            "slug": "",
+            "imageUrl": "https://www.namava.ir/Content/Upload/Images/b9688e00-f791-4e11-b6cb-41e87d358e66.jpg",
+            "referenceId": 1268,
+            "referenceType": "PostGroup"
+        },
+        {
+            "id": 88812,
+            "caption": "مجموعه فیلم‌ های لوپن سوم",
+            "slug": "",
+            "imageUrl": "https://www.namava.ir/Content/Upload/Images/8786053f-34e8-4d21-a7da-81236b1065a7.jpg",
+            "referenceId": 1415,
+            "referenceType": "PostGroup"
+        },
+        {
+            "id": 86241,
+            "caption": "مجموعه فیلم های سریع و خشمگین",
+            "slug": "",
+            "imageUrl": "https://www.namava.ir/Content/Upload/Images/c42c3bfe-42e3-468f-b2f3-d1ae9dbec9a2.jpg",
+            "referenceId": 1411,
+            "referenceType": "PostGroup"
+        },
+        {
+            "id": 84970,
+            "caption": "مجموعه فیلم های پینوکیو",
+            "slug": "",
+            "imageUrl": "https://www.namava.ir/Content/Upload/Images/5a054b20-9887-43d7-8155-7846cebcd47b.jpg",
+            "referenceId": 1410,
+            "referenceType": "PostGroup"
+        },
+        {
+            "id": 83959,
+            "caption": "مجموعه فیلم های کتاب جنگل",
+            "slug": "",
+            "imageUrl": "https://www.namava.ir/Content/Upload/Images/ce4baf97-5e58-41f9-b6cd-34a957bd3465.jpg",
+            "referenceId": 1408,
+            "referenceType": "PostGroup"
+        },
+        {
+            "id": 80829,
+            "caption": "مجموعه فیلم های بتمن",
+            "slug": "",
+            "imageUrl": "https://www.namava.ir/Content/Upload/Images/c20f872e-018c-4aff-9cfa-63502a7fd1bb.jpg",
+            "referenceId": 1400,
+            "referenceType": "PostGroup"
+        },
+        {
+            "id": 76394,
+            "caption": "مجموعه فیلم های ۰۰۷: جیمز باند",
+            "slug": "",
+            "imageUrl": "https://www.namava.ir/Content/Upload/Images/dcac30e3-b942-4b3d-a4be-b5e0a8cbd938.jpg",
+            "referenceId": 1387,
+            "referenceType": "PostGroup"
+        },
+        {
+            "id": 57601,
+            "caption": "مجموعه فیلم های مکس دیوانه",
+            "slug": "",
+            "imageUrl": "https://www.namava.ir/Content/Upload/Images/faf82ed4-2173-4601-8528-5436741dfc07.jpg",
+            "referenceId": 1360,
+            "referenceType": "PostGroup"
+        },
+        {
+            "id": 39189,
+            "caption": "مجموعه فیلم های  پیشتازان فضا",
+            "slug": "",
+            "imageUrl": "https://www.namava.ir/Content/Upload/Images/e5265cc3-4351-48f8-b621-996b8ab72e1b.jpg",
+            "referenceId": 1310,
+            "referenceType": "PostGroup"
+        },
+        {
+            "id": 49912,
+            "caption": "مجموعه فیلم های پسران بد",
+            "slug": "",
+            "imageUrl": "https://www.namava.ir/Content/Upload/Images/5ae1264b-8167-4420-9ecb-189a3930e857.jpg",
+            "referenceId": 1349,
+            "referenceType": "PostGroup"
+        },
+        {
+            "id": 27661,
+            "caption": "مجموعه فیلم های ارباب حلقه‌ها",
+            "slug": "",
+            "imageUrl": "https://www.namava.ir/Content/Upload/Images/d6ad3163-7e55-4ca2-a6fe-9af686c42c7a.jpg",
+            "referenceId": 1109,
+            "referenceType": "PostGroup"
+        },
+        {
+            "id": 27782,
+            "caption": "مجموعه فیلم های نابودگر",
+            "slug": "",
+            "imageUrl": "https://www.namava.ir/Content/Upload/Images/faafb3b7-1641-4b75-a7bb-ab337b59224a.jpg",
+            "referenceId": 1201,
+            "referenceType": "PostGroup"
+        },
+        {
+            "id": 27783,
+            "caption": "مجموعه فیلم های مردان ایکس",
+            "slug": "",
+            "imageUrl": "https://www.namava.ir/Content/Upload/Images/f552ac08-dc22-4324-856d-5b9aea765a04.jpg",
+            "referenceId": 1203,
+            "referenceType": "PostGroup"
+        },
+        {
+            "id": 43886,
+            "caption": "مجموعه فیلم های لورل و هاردی",
+            "slug": "",
+            "imageUrl": "https://www.namava.ir/Content/Upload/Images/66ce41e8-589d-4653-9977-8ba21772ff6d.jpg",
+            "referenceId": 1320,
+            "referenceType": "PostGroup"
+        },
+        {
+            "id": 42850,
+            "caption": "مجموعه فیلم های لاک پشت های نینجا",
+            "slug": "",
+            "imageUrl": "https://www.namava.ir/Content/Upload/Images/b71389f0-5827-4d77-af6b-a1b30d9ce0d3.jpg",
+            "referenceId": 1319,
+            "referenceType": "PostGroup"
+        },
+        {
+            "id": 40227,
+            "caption": "مجموعه فیلم های جنگ دنیاها",
+            "slug": "",
+            "imageUrl": "https://www.namava.ir/Content/Upload/Images/e516e15d-3a69-46a5-b9e5-7f6901e812e1.jpg",
+            "referenceId": 1312,
+            "referenceType": "PostGroup"
         }
     ]
 }

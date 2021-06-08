@@ -1,8 +1,6 @@
 body {
     box-sizing: border-box;
     background-color: $background;
-}
-body {
     font-family: "iranyekan";
     color: white;
     overflow-x: hidden;
@@ -28,8 +26,31 @@ a {
     &:hover {
         color: $secondary-color;
     }
+    &:focus {
+        outline: 0;
+    }
 }
 
 .row {
     margin: 0;
+}
+
+.splide__list {
+    width: 100%;
+    display: flex;
+}
+.splide--rtl {
+    position: relative;
+}
+
+.slick-arrow {
+    opacity: 1;
+    transition: opacity 0.4s;
+}
+.slick-disabled {
+    opacity: 0 !important;
+}
+
+.slick-next {
+    left: 5px !important;
 }

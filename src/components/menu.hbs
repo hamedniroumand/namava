@@ -1,24 +1,56 @@
-<nav>
-    <div class="right">
-        <div class="logo">
-            <a href="/">
-                {{> logo }}
-            </a>
+<div class="right">
+    <div class="logo">
+        <div class="tablet-menu close-side-nav">
+             {{> Icons/menu }}
         </div>
-        <div class="menu">
-            <ul>
-                {{#each header.menu}}
-                <li>
-                    <a href="{{ link }}">
-                        {{ title }}
-                    </a>
-                </li>
-                {{~/each}}
-            </ul>
+        <a href="/">
+            {{> logo }}
+        </a>
+    </div>
+    <div class="menu">
+        <ul>
+            {{#each header.menu}}
+            <li>
+                <a href="{{ link }}">
+                    {{ title }}
+                </a>
+            </li>
+            {{~/each}}
+        </ul>
 
-        </div>
     </div>
-    <div class="left">
+</div>
+<div class="left">
+    <a class="icon-container" href="#">
         <i class="fa fa-search"></i>
+    </a>
+    <a class="icon-container" href="#">
+        <i class="fa fa-envelope"></i>
+    </a>
+    <a class="icon-container" href="#">
+        <i class="fa fa-user-circle"></i>
+    </a>
+</div>
+
+<aside class="side-nav">    
+    <div class="nav-header">
+        <div class="menu-icon close-side-nav">
+             {{> Icons/menu }}
+        </div>
+        <a class="logo" href="/">
+            {{> logo }}
+        </a>
     </div>
-</nav>
+    <ul class="links">
+        {{#each header.menu}}
+        <li class="link">
+            <a href="{{ link }}">
+                <span class="link-icon">
+                    <img src="{{ icon }}"  />
+                </span>
+                <p>{{ title }}</p>
+            </a>
+        </li>
+        {{/each}}
+    </ul>
+</aside>

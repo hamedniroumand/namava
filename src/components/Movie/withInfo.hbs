@@ -1,0 +1,18 @@
+<a class="movie" href="#">
+    <div class="cover">
+        {{#if isDubbed }}
+        <img class="long" src="{{ image }}" alt="">
+        {{else}}
+        <img src="{{ image }}" alt="">
+        {{/if}}
+        <div class="hover-info internal-series">
+            <p>فیلم - 2018</p>
+            <p><i class="fa fa-heart"></i> 80%</p>
+            <p><span>{{> ../Icons/imdb }}</span> 7.4</p>
+            {{#if isDubbed }}
+            <p><span>{{> ../Icons/microphone }}</span>دوبله نماوا</p>
+            {{/if}}
+        </div>
+    </div>
+    <h4>{{ title }}</h4>
+</a>

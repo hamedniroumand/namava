@@ -1,0 +1,19 @@
+<div class="info">
+    <a href="#">
+        <h3 class="title section-title">
+            {{ title }}
+            <span class="see-more">مشاهده همه <i class="fa fa-arrow-left"></i></span>
+        </h3>
+    </a>
+</div>
+
+<div class="movie-items default-row-items">
+    {{#each data as |movie| }}
+    {{#if movie.isMovie}}
+    <div class="movie-item">{{> withInfo image=movie.imageUrl title=movie.caption isDubbed=movie.isDubbed }}</div>
+    {{else if movie.isEpisode}}
+    <div class="movie-item">{{> withPlayIcon image=movie.seriesImageUrl title=movie.seriesCaption
+        subTitle=movie.episodCaption }}</div>
+    {{/if}}
+    {{/each}}
+</div>

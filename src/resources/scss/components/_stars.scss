@@ -1,0 +1,25 @@
+.stars {
+    padding: $section-padding;
+
+    .star-items {
+        .star-item {
+            margin-left: $row-item-gap;;
+            display: inline;
+            a {
+                display: inline-block;
+                &:hover {
+                    color: inherit;
+                }
+                img {
+                    width: 190px;
+                    height: 190px;
+                    border-radius: 50%;
+                    object-fit: cover;
+                }
+                p {
+                    text-align: center;
+                }
+            }
+        }
+    }
+}

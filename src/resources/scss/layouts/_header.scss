@@ -13,6 +13,9 @@ header {
         display: none;
         background-size: contain;
         background-repeat: no-repeat;
+        @include responsive(sm) {
+            min-height: 135vw;
+        }
 
         &.active {
             display: block !important;
@@ -24,14 +27,21 @@ header {
             transform: translateY(30%);
             padding-right: 2rem;
 
-            @include responsive($mobile-breakpoint) {
-                display: none;
+            @include responsive(sm) {
+                text-align: center;
+                transform: translateY(80%);
             }
 
             &-logo {
                 img {
                     max-width: 12rem;
                     max-height: 9rem;
+                    @include responsive(md) {
+                        max-height: 6.5rem;
+                    }
+                    @include responsive(sm) {
+                        max-height: 5rem;
+                    }
                 }
             }
 
@@ -45,16 +55,16 @@ header {
                 p {
                     margin: 0.8rem 0;
                     font-size: 0.92rem;
+                    @include responsive(sm) {
+                        font-size: 0.66rem;
+                    }
                 }
                 p.main-description {
                     font-size: 0.85rem;
                     color: rgb(241, 241, 241);
                     max-width: 35%;
-                    @include responsive(md) {
+                    @include responsive(lg) {
                         max-width: 60%;
-                    }
-                    @include responsive(sm) {
-                        max-width: 100%;
                     }
                     @include responsive($tablet-breakpoint) {
                         display: none;
@@ -68,6 +78,10 @@ header {
                 align-items: center;
                 flex-wrap: wrap;
                 margin-top: 1.5rem;
+
+                @include responsive(sm) {
+                    justify-content: center;
+                }
 
                 * {
                     height: 100%;

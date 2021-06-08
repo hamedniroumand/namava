@@ -10,20 +10,44 @@
 </head>
 
 <body>
-    {{> ../components/Header/header }}
 
-    <main>
-        {{#if offers}}
-        {{> ../components/Offer/offer offersData=offers }}
-        {{/if}}
-    </main>
+    <div id="app">
 
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
+        <header id="header">
+            {{> ../components/Header/header }}
+        </header>
+
+        <main>
+            {{#if offers}}
+            <section class="offers">
+                {{> ../components/Offer/offer offersData=offers }}
+            </section>
+            {{/if}}
+
+            {{#each videos}}
+            <section class="movies">
+                {{> ../components/Movie/movie title=title type=type data=data }}
+            </section>
+            {{/each}}
+
+            {{#each starts}}
+            <section class="stars">
+                {{> ../components/Stars/stars title=title data=data }}
+            </section>
+            {{/each}}
+
+            <section class="collection">
+                {{> ../components/Collection/collection data=collections }}
+            </section>
+
+        </main>
+
+    <footer>
+        {{> ../components/footer }}    
+    </footer>
+
+    <div class="wrapper"></div>
+    </div>
 
 </body>
 
