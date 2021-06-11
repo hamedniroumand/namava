@@ -1,0 +1,19 @@
+.header-control {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 0rem;
+    left: 2rem;
+    z-index: 1;
+    top: -3.8rem;
+
+    @include responsive(md) {
+        display: none;
+    }
+
+    button {
+        &:not(:last-child) {
+            margin-left: 0.6rem;
+        }
+    }
+}

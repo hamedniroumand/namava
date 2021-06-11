@@ -13,40 +13,41 @@
 
     <div id="app">
 
-        <header id="header">
-            {{> ../components/Header/header }}
-        </header>
+
+        {{> ../components/Header/header }}
+
 
         <main>
             {{#if offers}}
-            <section class="offers">
-                {{> ../components/Offer/offer offersData=offers }}
-            </section>
+
+            {{> ../components/Offer/offer offersData=offers }}
+
             {{/if}}
 
             {{#each videos}}
-            <section class="movies">
-                {{> ../components/Movie/movie title=title type=type data=data }}
-            </section>
+
+            {{> ../components/Movie/movie title=title type=type data=data }}
+
             {{/each}}
 
             {{#each starts}}
-            <section class="stars">
-                {{> ../components/Stars/stars title=title data=data }}
-            </section>
+
+            {{> ../components/Stars/stars title=title data=data }}
+
             {{/each}}
 
-            <section class="collection">
-                {{> ../components/Collection/collection data=collections }}
-            </section>
+            {{> ../components/Collection/collection data=collections }}
 
         </main>
 
-    <footer>
-        {{> ../components/footer }}    
-    </footer>
+        <footer>
+            {{> ../components/footer }}
+        </footer>
 
-    <div class="wrapper"></div>
+        <div class="wrapper"></div>
+        <div id="loading">
+            <p>لطفا تا بارگذاری کامل سایت صبر کنید</p>
+        </div>
     </div>
 
 </body>

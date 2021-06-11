@@ -1,3 +1,4 @@
+import $ from "jquery";
 let oldScroll = 0;
 document.addEventListener("scroll", (event) => {
     scrollHandler();
@@ -9,23 +10,24 @@ const scrollHandler = () => {
     if (topOfWindow > oldScroll) { // scroll down
         if (topOfWindow > 0) {
             if(nav.classList.contains("fix")) nav.classList.remove("fix")
-            // if (nav.style.position !== "absolute") nav.style.position = "absolute";
         } else {
             if(!nav.classList.contains("fix")) nav.classList.add("fix")
-            // if (nav.style.position !== "fixed") nav.style.position = "fixed";
         }
     } else { // scroll up
         if (topOfWindow > 0) {
             if(!nav.classList.contains("fix")) nav.classList.add("fix")
-            // if (nav.style.position !== "fixed") nav.style.position = "fixed";
         } else {
             if(nav.classList.contains("fix")) nav.classList.remove("fix")
-            // if (nav.style.position !== "absolute") nav.style.position = "absolute";
         }
     }
     oldScroll = topOfWindow;
 }
 
+
+window.addEventListener("load", () => {
+    const loadingElement = document.getElementById("loading");
+    loadingElement.style.display = "none";
+});
 
 document.addEventListener("DOMContentLoaded", () => {
     const closes = document.querySelectorAll('.close-side-nav');

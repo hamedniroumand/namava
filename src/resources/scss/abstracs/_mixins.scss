@@ -72,16 +72,16 @@
         top: 13.5vh;
     }
     @include responsive(1050px) {
-        top: 15vh;
+        top: 16vh;
     }
     @include responsive(980px) {
-        top: 18.5vh;
+        top: 19.5vh;
     }
     @include responsive(900px) {
-        top: 20vh;
+        top: 23vh;
     }
     @include responsive(850px) {
-        top: 23vh;
+        top: 27vh;
     }
     @include responsive(800px) {
         top: 8vh;
@@ -89,17 +89,20 @@
     @include responsive(750px) {
         top: 12.5vh;
     }
+    @include responsive(680px) {
+        top: 14.5vh;
+    }
     @include responsive(610px) {
-        top: 15vh;
+        top: 16.7vh;
     }
     @include responsive(590px) {
-        top: 17vh;
-    }
-    @include responsive(560px) {
         top: 18.5vh;
     }
-    @include responsive(530px) {
+    @include responsive(560px) {
         top: 20vh;
+    }
+    @include responsive(530px) {
+        top: 23vh;
     }
     @include responsive(500px) {
         top: 0;

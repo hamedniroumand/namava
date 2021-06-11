@@ -2,6 +2,8 @@
     {{> ../menu }}
 </nav>
 
+<header id="header">
 {{#each header.slideShow}}
     {{> headerItem active=@index title=title logo=logo description=description infoDescription=infoDescription info=info background=background }}
 {{~/each}}
+</header>

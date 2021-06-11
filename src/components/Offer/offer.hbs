@@ -1,9 +1,14 @@
-<div class="offers collection-row-items">
-    {{#each offersData}}
-    <div class="offer">
-        <a href="{{ url }}">
-            <img src="{{ background }}" alt="">
-        </a>
+<section class="offers">
+    {{> ../Header/headerControls}}
+
+    <div class="collection-row-items">
+        {{#each offersData}}
+        <div class="offer">
+            <a href="{{ url }}">
+                <img src="{{ background }}" alt="">
+            </a>
+        </div>
+        {{/each}}
     </div>
-    {{/each}}
-</div>
+    
+</section>

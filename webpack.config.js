@@ -1,6 +1,7 @@
 const path = require("path");
 const webpack = require("webpack");
 const glob = require("glob");
+let database = require("./data.json");
 
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
@@ -8,7 +9,7 @@ const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const { ESBuildMinifyPlugin } = require("esbuild-loader");
 const PurgecssPlugin = require("purgecss-webpack-plugin");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
-const whitelister = require("purgecss-whitelister");
+const MinifyPlugin = require("babel-minify-webpack-plugin");
 
 const config = {
     devtool: "source-map",
@@ -19,6 +20,7 @@ const config = {
     },
     output: {
         path: path.resolve(__dirname, "dist"),
+        clean: true,
     },
     optimization: {
         splitChunks: {
@@ -63,9 +65,6 @@ const config = {
                             useRelativePaths: true,
                         },
                     },
-                    // {
-                    //     loader: 'url-loader'
-                    // }
                 ],
             },
             {
@@ -87,20 +86,6 @@ const config = {
                 ],
             },
             {
-                test: /\.ejs$/,
-                use: [
-                    {
-                        loader: "ejs-compiled-loader",
-                        options: {
-                            htmlmin: true,
-                            htmlminOptions: {
-                                removeComments: true,
-                            },
-                        },
-                    },
-                ],
-            },
-            {
                 test: /\.hbs$/,
                 use: [
                     {
@@ -117,6 +102,7 @@ const config = {
         ],
     },
     plugins: [
+        new CleanWebpackPlugin(),
         new webpack.HotModuleReplacementPlugin(),
         new CopyWebpackPlugin({
             patterns: [
@@ -130,10 +116,10 @@ const config = {
             template: path.join(__dirname, "src", "pages", "index.hbs"),
             filename: "index.html",
             chunks: ["styles", "app", "home", "vendors~app~home"],
-            templateParameters: require("./data.json"),
+            templateParameters: database,
             favicon: "./src/resources/img/favicon.png",
         }),
-        new CleanWebpackPlugin(),
+        new MinifyPlugin(),
     ],
 };
 
@@ -153,14 +139,18 @@ module.exports = (env, { mode }) => {
         config.output.filename = "[name].bundle.[contenthash].js";
         config.plugins.push(
             new MiniCssExtractPlugin({
-                filename: "[name].[contenthash].css",
+                filename: "[name].bundle.[contenthash].css",
             }),
-            // new PurgecssPlugin({
-            //     paths: glob.sync(`${path.join(__dirname, "src")}/**/*.hbs`, {
-            //         nodir: true,
-            //         css: ["./src/resources/scss/main.scss"],
-            //     }),
-            // })
+            new PurgecssPlugin({
+                paths: glob.sync(`${path.join(__dirname, "src")}/**/*.hbs`, {
+                    nodir: true,
+                }),
+                safelist: () => ({
+                    standard: ["fix", "active", /^slick-/],
+                    deep: [],
+                    greedy: [],
+                }),
+            })
         );
     }
 

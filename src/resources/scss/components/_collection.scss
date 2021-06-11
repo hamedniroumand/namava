@@ -9,6 +9,7 @@
             }
             img {
                 width: 26rem;
+                border-radius: 4px;
                 @include responsive(sm) {
                     width: 90vw;
                 }
