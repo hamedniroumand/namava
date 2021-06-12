@@ -3,7 +3,7 @@ footer {
     font-size: 0.8rem;
     color: rgb(230, 230, 230);
     position: relative;
-    @include main-and-fotter-transform;
+    @include main-and-footer-transform;
 
     @include responsive(md) {
         padding: 2rem;

@@ -9,8 +9,3 @@
 @import "components";
 @import "utilities";
 
-main {
-    position: relative;
-    top: -12vh;
-    @include main-and-fotter-transform;
-}

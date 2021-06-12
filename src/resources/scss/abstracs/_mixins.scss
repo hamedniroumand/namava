@@ -58,7 +58,7 @@
     @content;
 }
 
-@mixin main-and-fotter-transform {
+@mixin main-and-footer-transform {
     @include responsive(1400px) {
         top: 0;
     }

@@ -20,7 +20,6 @@ const config = {
     },
     output: {
         path: path.resolve(__dirname, "dist"),
-        clean: true,
     },
     optimization: {
         splitChunks: {
@@ -35,8 +34,7 @@ const config = {
     },
     resolve: {
         alias: {
-            "@": path.resolve(__dirname, "src/resources/js/"),
-            "@@": path.resolve(__dirname, "src/resources"),
+            "@": path.resolve(__dirname, "src/resources"),
             "~": path.resolve(__dirname, "src"),
         },
     },
@@ -90,12 +88,6 @@ const config = {
                 use: [
                     {
                         loader: "handlebars-loader",
-                        options: {
-                            helperDirs: path.join(__dirname, "src/helpers"),
-                            precompileOptions: {
-                                knownHelpersOnly: false,
-                            },
-                        },
                     },
                 ],
             },
@@ -119,7 +111,6 @@ const config = {
             templateParameters: database,
             favicon: "./src/resources/img/favicon.png",
         }),
-        new MinifyPlugin(),
     ],
 };
 
@@ -150,7 +141,8 @@ module.exports = (env, { mode }) => {
                     deep: [],
                     greedy: [],
                 }),
-            })
+            }),
+            new MinifyPlugin(),
         );
     }
 

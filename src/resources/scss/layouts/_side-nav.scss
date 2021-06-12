@@ -15,15 +15,6 @@ $side-nav-x-padding: 1.2rem;
 
     &.active {
         transform: translateX(-$side-nav-width);
-
-        // .wrapper {
-        //     position: absolute;
-        //     width: 100vw;
-        //     height: 100vh;
-        //     background-color: rgba(black, .8);
-        //     top: 0;
-        //     left: 0;
-        // }
     }
 
     .nav-header {
